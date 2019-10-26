@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Initial Commit</title>
+</head>
+<body>
+<div class="bigass">
+    <header>
+        dheatov.cf
+        <div class="buttons"><a href="/">home</a></div>
+    </header>
+    <h1>Initial Commit</h1>
+    2019-10-27
+    <article>
+        <p>After several hours of effort, I spinned up my zero-cost microwebservice <em>(read: small virtual server)</em>.  It shares the same essential pillars with other ordinary webservice.  The first pillar is getting a free domain name.  A quick DuckDuckGo search will return <a href="https://www.freenom.com">freenom.com</a>, which offers a number of free ccTLDs like <em>.cf</em> and <em>.ga</em>.  I've had problems dealing with freenom's nameserver, hence I wandered around to look for other alternatives.</p>
+<p>That's the second pillar, nameserver.  After playing with some of the top results, I settled down with <a href="https://dns.he.net">Hurrican Electric</a> which has a straightforward UI.  To test this, I uses <a href="https://pages.github.com">GitHub Pages</a>, there's an official guide on hooking up with your own domain name.</p>
+<p>The third pillar, the server.  The cheapest option is to share a small slice of server (a virtual private server).  There probably isn't any free VPS available, what you can look for is those with long free trial period.  If you've never used Amazon Web Service, you can get a nice one year free micro ec2, which should be sufficient for really light usage.</p>
+<p>Finally, you might want to secure your connection.  The answer to this is pretty straightforward, <a href="https://letsencrypt.org">Let's Encrypt</a>!  Putting these all together, you will get yourself a one year free microwebservice or whatever it's called.  The only limitation here is the outgoing network traffic from AWS, there is a hidden cap of 15GB/month.</p>
+<p>For a long-term solution, I am looking at <a href="https://www.ovh.com">ovh</a> and <a href="https://buyvm.net">buyvm</a>.  They provide price as low as 2USD per month, with same specifications as micro.t2 but with unlimited bandwidth.  Expect another writeup when I almost reach the one-year point.</p>
+    </article>
+</div>
+</body>
+<style>
+    html {
+        font-size: 26px;
+    }
+    header {
+        border-bottom: 1px solid black;
+    }
+    .bigass .buttons {
+        float: right;
+    }
+    .bigass .buttons a {
+        text-decoration: none;
+    }
+    @media only screen and (min-width: 800px) {
+        .bigass {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+</style>
+</html>
